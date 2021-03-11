@@ -25,12 +25,12 @@
     <!-- Screen brightness used to dim the screen while dozing in a very low power state.
          May be less than the minimum allowed brightness setting
          that can be set by the user. -->
-    <integer name="config_screenBrightnessDoze">30</integer>
+    <integer name="config_screenBrightnessDoze">75</integer>
 
     <!-- Screen brightness used to dim the screen when the user activity
          timeout expires.  May be less than the minimum allowed brightness setting
          that can be set by the user. -->
-    <integer name="config_screenBrightnessDim">10</integer>
+    <integer name="config_screenBrightnessDim">50</integer>
 
     <!-- Enable auto brightness while Dozing -->
     <bool name="config_allowAutoBrightnessWhileDozing">true</bool>
@@ -63,13 +63,15 @@
          Must be overridden in platform specific overlays -->
     <integer-array name="config_autoBrightnessLevels">
         <item>1</item>
-        <item>13</item>
-        <item>45</item>
-        <item>100</item>
-        <item>400</item>
-        <item>800</item>
-        <item>1500</item>
-        <item>3000</item>
+        <item>4</item>
+        <item>9</item>
+        <item>46</item>
+        <item>92</item>
+        <item>188</item>
+        <item>370</item>
+        <item>734</item>
+        <item>1420</item>
+        <item>3100</item>
     </integer-array>
 
     <!-- Stability requirements in milliseconds for accepting a new brightness level.  This is used
@@ -98,15 +100,17 @@
          array. The brightness values must be non-negative and non-decreasing. This must be
          overridden in platform specific overlays -->
     <array name="config_autoBrightnessDisplayValuesNits">
-        <item>7.9</item>
-        <item>21.4</item>
-        <item>43.0</item>
-        <item>112.2</item>
-        <item>138.3</item>
-        <item>219.9</item>
-        <item>241.2</item>
-        <item>384.4</item>
-        <item>550.0</item>
+        <item>8.1</item>
+        <item>10.2</item>
+        <item>37.4</item>
+        <item>41.8</item>
+        <item>99.7</item>
+        <item>115.9</item>
+        <item>128.3</item>
+        <item>152.5</item>
+        <item>186.6</item>
+        <item>280.1</item>
+        <item>433.9</item>
     </array>
 
     <!-- An array describing the screen's backlight values corresponding to the brightness
@@ -114,14 +118,16 @@
          This array should be equal in size to config_screenBrightnessBacklight. -->
     <integer-array name="config_screenBrightnessBacklight">
         <item>10</item>
-        <item>40</item>
-        <item>63</item>
-        <item>85</item>
-        <item>128</item>
-        <item>140</item>
-        <item>171</item>
-        <item>178</item>
-        <item>218</item>
+        <item>30</item>
+        <item>35</item>
+        <item>77</item>
+        <item>88</item>
+        <item>129</item>
+        <item>139</item>
+        <item>148</item>
+        <item>160</item>
+        <item>170</item>
+        <item>201</item>
         <item>255</item>
     </integer-array>
 
@@ -132,16 +138,18 @@
          brightness modes but only the maximum brightness value obtainable in a sustainable manner.
          This array should be equal in size to config_screenBrightnessBacklight -->
     <array name="config_screenBrightnessNits">
-        <item>2.5</item>
-        <item>7.9</item>
-        <item>21.4</item>
-        <item>43.0</item>
-        <item>112.2</item>
-        <item>138.3</item>
-        <item>219.9</item>
-        <item>241.2</item>
-        <item>384.4</item>
-        <item>550.0</item>
+        <item>3.9</item>
+        <item>8.1</item>
+        <item>10.2</item>
+        <item>37.4</item>
+        <item>41.8</item>
+        <item>99.7</item>
+        <item>115.9</item>
+        <item>128.3</item>
+        <item>152.5</item>
+        <item>186.6</item>
+        <item>280.1</item>
+        <item>433.9</item>
     </array>
 
     <!-- Vibrator pattern for feedback about a long screen/key press -->

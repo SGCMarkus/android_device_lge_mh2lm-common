@@ -5,6 +5,7 @@
 # Audio
 persist.vendor.audio.voicecall.speaker.stereo=true
 persist.vendor.lge.audio.voice.clarity=off
+persist.vendor.lge.audio.external_ec=OFF
 
 # Camera
 ro.vendor.lge.aux.camera=2
